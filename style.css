@@ -1,108 +1,152 @@
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-body {
-  font-family: Arial, sans-serif;
-  background-color: #487898; 
-  min-height: 100vh;
-}
-
-
-.navbar {
-  background-color: #9e2a2b; 
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 50px;
-}
-
-.logo {
-  color: #ffffff;
-  font-weight: bold;
-  font-size: 1.2rem;
-  letter-spacing: 1px;
-}
-
-.nav-links a {
-  color: #ffffff;
-  text-decoration: none;
-  margin-left: 25px;
-  font-size: 1rem;
-}
-
-.nav-links a:hover {
-  text-decoration: underline;
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 
-.hero-container {
-  max-width: 1100px;
-  margin: 60px auto;
-  padding: 0 20px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 50px;
+
+ /* HEADER BAR & LOGO */
+  
+.header-bar {
+    width: 100%;
+    height: 65px;
+    background-color: #9fe1f5;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+}
+
+.logo-text {
+    font-size: 20px;
+    font-weight: 800;
+    color: #083358;
+    letter-spacing: 1.5px;
 }
 
 
-.hero-text {
-  flex: 1;
-  color: #ffffff;
+
+   /* LEFT SIDEBAR MENU */
+  
+.left-menu li a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 12px 20px;
+    background-color: rgb(18, 60, 166);
+    margin-bottom: 10px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 16px;
+    transition: all 0.25s ease;
 }
 
-.hero-text h1 {
-  font-family: 'Georgia', serif;
-  font-size: 3.2rem;
-  font-weight: bold;
-  margin-bottom: 20px;
-  line-height: 1.2;
+.left-menu li a i {
+    font-size: 18px;
+    width: 20px;
+    text-align: center;
 }
 
-.hero-text p {
-  font-size: 1.1rem;
-  line-height: 1.6;
-  margin-bottom: 30px;
-  opacity: 0.9;
+.left-menu li a:hover {
+    background-color: rgb(98, 186, 202);
+    transform: translateX(4px);
+}
+
+.left-menu li.active a {
+    background-color: rgb(145, 119, 215);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
 
-.btn {
-  display: inline-block;
-  padding: 12px 28px;
-  background-color: #ffffff;
-  color: #2b4c65;
-  text-decoration: none;
-  font-weight: bold;
-  border-radius: 6px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: background-color 0.2s ease;
+
+    /* BANNER SECTION */
+  
+.banner {
+    background-color: #151212;
+    color: white;
+    padding: 30px 40px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.btn:hover {
-  background-color: #f0f0f0;
+.banner-text {
+    max-width: 55%;
 }
 
-.hero-image {
-  flex: 1;
-  display: flex;
-  justify-content: flex-end;
+.banner-img {
+    max-width: 40%;
+    height: auto;
 }
 
-.image-card {
-  /* background-color: #ffffff; */
-  padding: 20px;
-  border-radius: 10px;
-  /* box-shadow: 0 10px 25px rgba(0,0,0,0.2); */
+
+ /* CATEGORY HEADER */
+  
+.category-header {
+    background-color: #4a4d52;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 8px;
+    margin-bottom: 20px;
 }
 
-.image-card img {
-  width: 320px;
-  height: 380px;
-  object-fit: cover;
-  display: block;
+.category-header h2 {
+    margin: 0;
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+
+
+    /* SEARCH BOX SECTION */
+  
+.search-container {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    border: 1px solid #dcdde1;
+    border-radius: 6px;
+    overflow: hidden;
+    background-color: white;
+    width: 250px;
+}
+
+.search-box input {
+    border: none;
+    padding: 8px 12px;
+    outline: none;
+    font-size: 14px;
+    width: 100%;
+    color: #333;
+}
+
+.search-box button {
+    background-color: #f1f2f6;
+    border: none;
+    border-left: 1px solid #dcdde1;
+    padding: 8px 12px;
+    cursor: pointer;
+    color: #747d8c;
+    transition: 0.2s;
+}
+
+.search-box button:hover {
+    background-color: #e4e7eb;
+    color: #333;
 }
